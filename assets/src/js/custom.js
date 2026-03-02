@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
           $('.il_archive_more').html(resp)
         })
       })
-      
+
 });
 
 // When the user scrolls down 20px from the top of the document, show the button

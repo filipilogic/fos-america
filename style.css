@@ -10,3 +10,62 @@ License URI: LICENSE
 Text Domain: ilogic
 
 */
+
+/* STEFAN CSS */
+@media (max-width: 1199.5px) {
+    .hero-promise-gala .il_btn {
+  
+         padding: 1.6rem 2.9rem !important;
+		
+	}}
+
+
+@media (max-width: 797.5px) {
+  .sheba-promise-gala-countdown .il_block.il-countdown .container .il-countdown-ticker .countdown-box {
+
+    border-color:#2FB297!important;
+}}
+
+.the-sheba-promise-from-last-year-spacing button#modula-jtg-9008-load
+
+ {
+    margin-top: 20px;
+}
+
+ @media (max-width: 1600px) {
+	 
+  .il_block.il_section.il_exec-dir-section.speaker.about-speak 
+  .il_section_inner.container.ib-right.stack-mobile {
+	  
+	width: 90%;
+	 } 
+	 
+  .il_block.il_section.il_exec-dir-section.speaker.about-speak .right img {
+    height: 90% !important;
+}
+
+	 .il_block.il_section.il_exec-dir-section.speaker.about-speak .il_section_inner.container.ib-right.stack-mobile {
+		 padding-bottom: 3rem!important;
+		 
+	 }
+	 
+}
+	 
+	 
+	@media (min-width: 981px) and (max-width: 1600px) {
+		
+  .il_block.il_section.il_exec-dir-section.speaker.about-speak 
+  .il_section_inner.container.ib-right.stack-mobile {
+	   
+	 width: 90%;
+	  
+		} 
+  .il_block.il_section.il_exec-dir-section.speaker.about-speak .right img {
+    height: 90% !important;
+}
+		
+			 .il_block.il_section.il_exec-dir-section.speaker.about-speak .il_section_inner.container.ib-right.stack-mobile {
+		 padding-bottom: 3rem!important;
+		 
+	 }
+}

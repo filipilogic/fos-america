@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<?php the_field('head_script', 'option') ?> <!-- Head(er) External Code -->
+	<?php echo get_field('head_script', 'option') ?> <!-- Head(er) External Code -->
 	<?php wp_head(); ?>
 	<meta name="theme-color" content="<?php the_field('primary_color', 'option'); ?>" />
 	<style>
@@ -62,7 +62,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php the_field('body_top_script', 'option') ?> <!-- Body Top External Script -->
+<?php echo get_field('body_top_script', 'option') ?> <!-- Body Top External Script -->
 <?php wp_body_open(); ?>
 <div id="page" class="site header-version-1">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'ilogic' ); ?></a>
@@ -87,9 +87,9 @@
 			<?php endif; ?>
 
 	<?php 
-		$transparent_header = get_field('post_transparent_header');
+		$post_header_background_color = get_field('post_header_background_color');
 	?>
-	<header id="masthead" class="header-main <?php if ( $transparent_header && ! is_home() && ! is_category() ) echo 'post-transparent-header'; ?>">
+	<header id="masthead" class="header-main " <?php if ( $post_header_background_color && ! is_home() && ! is_category() ) echo 'style="background: ' . $post_header_background_color . '"'; ?>>
 		<div class="container header-main-inner">
 			<div class="logo-wrap">
 				<?php

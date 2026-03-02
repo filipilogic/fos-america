@@ -215,3 +215,42 @@
     }
   }
 }
+
+.columns-reverse-intro {
+  .il_columns_container {
+    display: flex;
+    flex-direction: column-reverse;
+    .il_block_intro {
+      margin-top: 4rem;
+      @include limbo-max {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.bring-them-hope-columns {
+  .il_columns_container {
+    .il_columns_inner {
+      .column {
+        img {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+.buttons-mobile-spacing-fix {
+  @include tab-max {
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .il_btn:not(:last-child), .il_btn:not(:last-child):not(:only-child) {
+        margin-right: 0;
+        margin-bottom: 18px;
+      }
+    }
+  }
+}

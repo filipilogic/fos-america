@@ -107,7 +107,7 @@
                             "label": "Time",
                             "name": "agenda_time",
                             "aria-label": "",
-                            "type": "time_picker",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -116,8 +116,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "display_format": "H:i:s",
-                            "return_format": "H:i",
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
                             "parent_repeater": "field_641a2a1c450bb"
                         },
                         {
@@ -346,5 +349,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698674685
+    "modified": 1721907345
 }

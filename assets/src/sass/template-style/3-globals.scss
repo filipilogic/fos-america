@@ -134,3 +134,15 @@ div {
     display: none;
   }
 }
+
+.hide_img_mob {
+  @include tab-max {
+    display: none;
+  }
+}
+
+.hide_img_desk {
+  @include limbo-min {
+    display: none;
+  }
+}

@@ -223,7 +223,8 @@ if ( ! empty( $content_align ) ) {
 		$top_mt_sec_img = get_field('top_mt_sec_img');
 		$bottom_mt_sec_img = get_field('bottom_mt_sec_img');
 		$img_style = '--bg-e-width-lg: ' . $width_ld_sec_img . '; --bg-e-height-lg: ' . $height_ld_sec_img . '; --bg-e-left-lg: ' . $left_ld_sec_img . '; --bg-e-right-lg: ' . $right_ld_sec_img . '; --bg-e-top-lg: ' . $top_ld_sec_img . '; --bg-e-bottom-lg: ' . $bottom_ld_sec_img . '; --bg-e-width-mt: ' . $width_mt_sec_img . '; --bg-e-height-mt: ' . $height_mt_sec_img . '; --bg-e-left-mt: ' . $left_mt_sec_img . '; --bg-e-right-mt: ' . $right_mt_sec_img . '; --bg-e-top-mt: ' . $top_mt_sec_img . '; --bg-e-bottom-mt: ' . $bottom_mt_sec_img . '; border-top-left-radius: ' . $image_border_top_left_radius . 'px; border-top-right-radius: ' . $image_border_top_right_radius . 'px; border-bottom-left-radius: ' . $image_border_bottom_left_radius . 'px; border-bottom-right-radius: ' . $image_border_bottom_right_radius . 'px;';
-	
+		
+		$image_opens_in_lightbox = get_field('image_opens_in_lightbox');
 		?>
 		<div class="right">
 			<?php
@@ -232,11 +233,21 @@ if ( ! empty( $content_align ) ) {
 					if( $image_mobile ) {
 						$img_class .= ' hide_sec_desk_img_mob';
 					}
-					$img_atts = [ 'class' => $img_class, 'style' => $img_style];
+					if ($image_opens_in_lightbox) {
+						$img_class .= ' img-opens-in-lightbox';
+						$img_atts = [ 'class' => $img_class, 'style' => $img_style, 'data-fancybox' => 'image-single', 'rel' => 'lightbox'];
+					} else {
+						$img_atts = [ 'class' => $img_class, 'style' => $img_style];
+					}
 					echo wp_get_attachment_image( $image['id'], $size, false, $img_atts );
 				}
 				if ( $image_mobile ) {
-					$img_atts_mobile = [ 'class' => 'sec_mob_img', 'style' => $img_style ];
+					if ($image_opens_in_lightbox) {
+						$img_class .= ' img-opens-in-lightbox';
+						$img_atts_mobile = [ 'class' => 'sec_mob_img', 'style' => $img_style, 'data-fancybox' => 'image-single', 'rel' => 'lightbox'];
+					} else {
+						$img_atts_mobile = [ 'class' => 'sec_mob_img', 'style' => $img_style];
+					}
 					echo wp_get_attachment_image( $image_mobile['id'], $size, false, $img_atts_mobile );
 				}
 			?>

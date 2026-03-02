@@ -192,6 +192,18 @@ div.margin-xl {
     display: none;
   }
 }
+@media (max-width: 797.5px) {
+  .hide_img_mob {
+    display: none;
+  }
+}
+
+@media (min-width: 797.6px) {
+  .hide_img_desk {
+    display: none;
+  }
+}
+
 /* Buttons */
 .il_btn {
   padding: 1.6rem 3.6rem;
@@ -1258,6 +1270,9 @@ div.margin-xl {
 .il_block.il_blog-block-section.blog-carousel-enabled.hp-meet-our-donors-section .flickity-prev-next-button {
   display: none;
 }
+.il_block.il_blog-block-section.blog-carousel-enabled.no-play-button .container .il_inner_posts_container article a:before {
+  display: none;
+}
 
 .il_block.il_columns {
   padding-top: var(--b-columns-space-top-ld);
@@ -1471,6 +1486,35 @@ div.margin-xl {
 @media (min-width: 1199.6px) {
   .about-counters-section .il_columns_container .column .il_col_text p {
     font-size: 2.4rem;
+  }
+}
+
+.columns-reverse-intro .il_columns_container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.columns-reverse-intro .il_columns_container .il_block_intro {
+  margin-top: 4rem;
+}
+@media (max-width: 1199.5px) {
+  .columns-reverse-intro .il_columns_container .il_block_intro {
+    margin-top: 30px;
+  }
+}
+
+.bring-them-hope-columns .il_columns_container .il_columns_inner .column img {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 797.5px) {
+  .buttons-mobile-spacing-fix .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .buttons-mobile-spacing-fix .buttons .il_btn:not(:last-child), .buttons-mobile-spacing-fix .buttons .il_btn:not(:last-child):not(:only-child) {
+    margin-right: 0;
+    margin-bottom: 18px;
   }
 }
 
@@ -1759,6 +1803,11 @@ div.margin-xl {
   .il_block.il-countdown .container .text-after-countdown a img {
     width: 30px;
     height: auto;
+  }
+}
+@media (max-width: 797.5px) {
+  .il_block.il-countdown.bring-them-hope-countdown .container .text-after-countdown p {
+    max-width: 68rem;
   }
 }
 
@@ -3563,6 +3612,9 @@ div.margin-xl {
     margin-bottom: var(--bg-e-bottom-mt);
   }
 }
+.il_section_inner .right img.img-opens-in-lightbox {
+  cursor: zoom-in;
+}
 
 .hp-under-the-stars-section .intro_text div {
   display: flex;
@@ -4168,6 +4220,18 @@ div.margin-xl {
   border-radius: 30px;
   box-shadow: 4px 10px 40px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+}
+
+@media (max-width: 797.5px) {
+  .buttons-mobile-spacing-fix .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .buttons-mobile-spacing-fix .buttons .il_btn:not(:last-child), .buttons-mobile-spacing-fix .buttons .il_btn:not(:last-child):not(:only-child) {
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
 }
 
 .il_tabs .il_tabs_nav ul {

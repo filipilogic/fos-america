@@ -375,6 +375,9 @@
         margin-top: var(--bg-e-top-mt);
         margin-bottom: var(--bg-e-bottom-mt);
       }
+      &.img-opens-in-lightbox {
+        cursor: zoom-in;
+      }
     }
   }
 }
@@ -1014,5 +1017,19 @@
     border-radius: 30px;
     box-shadow: 4px 10px 40px 0px rgba(0, 0, 0, 0.10);
     overflow: hidden;
+  }
+}
+
+.buttons-mobile-spacing-fix {
+  @include tab-max {
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .il_btn:not(:last-child), .il_btn:not(:last-child):not(:only-child) {
+        margin-right: 0;
+        margin-bottom: 18px;
+      }
+    }
   }
 }

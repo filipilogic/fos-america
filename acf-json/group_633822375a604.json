@@ -105,39 +105,6 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_654a2df9d57a1",
-            "label": "Media Mobile",
-            "name": "media_mobile",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_63448568cb704",
-                        "operator": "!=",
-                        "value": "ib-fullwidth"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
-        },
-        {
             "key": "field_651d6f8000ea8",
             "label": "Laptop & Desktop",
             "name": "",
@@ -412,6 +379,26 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_65ca0a9d7c9e6",
+            "label": "Image Opens in Lightbox",
+            "name": "image_opens_in_lightbox",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
         },
         {
             "key": "field_633823de11adb",
@@ -1270,5 +1257,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699533671
+    "modified": 1741001819
 }

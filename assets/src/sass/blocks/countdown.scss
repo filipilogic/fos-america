@@ -76,4 +76,16 @@
             }
         }
     }
+
+    &.bring-them-hope-countdown {
+        .container {
+            .text-after-countdown {
+                p {
+                    @include tab-max {
+                        max-width: 68rem;
+                    }
+                }
+            }
+        }
+    }
 }

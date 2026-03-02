@@ -329,8 +329,7 @@
                                 background: url('/wp-content/uploads/2023/10/Play-button.png');
                                 background-repeat: no-repeat;
                                 background-position: center;
-                                z-index: 1
-                                ;
+                                z-index: 1;
                             }
                         }
                         .article-container {
@@ -350,6 +349,19 @@
             }
             .flickity-prev-next-button {
                 display: none;
+            }
+        }
+        &.no-play-button {
+            .container {
+                .il_inner_posts_container {
+                    article {
+                        a {
+                            &:before {
+                                display: none;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
